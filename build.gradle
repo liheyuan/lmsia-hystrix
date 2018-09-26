@@ -31,7 +31,7 @@ dependencies {
     compileOnly 'ch.qos.logback:logback-classic:1.2.3'
     compileOnly 'org.projectlombok:lombok:1.16.8'
     compileOnly 'com.github.liheyuan:lmsia-trace:0.0.1'
-    
+
     compile 'com.netflix.hystrix:hystrix-core:1.5.12'
 
     // Use JUnit test framework

@@ -1,4 +1,4 @@
-package com.coder4.lmsia.cfg4j;
+package com.coder4.lmsia.hystrix;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
