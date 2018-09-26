@@ -46,8 +46,8 @@ public class BaseHystrixCommend<R> extends HystrixCommand<R> {
                                 .withAllowMaximumSizeToDivergeFromCoreSize(config.isAllowMaximumSizeToDivergeFromCoreSize())
                                 .withCoreSize(config.getCorePoolSize())
                                 .withMaximumSize(config.getMaxPoolSize())
-                                .withMaxQueueSize(config.getMaxQueueSize())                 // maxQueueSize是申请的blockingQueue的长度, 运行时无法修改
-                                .withQueueSizeRejectionThreshold(config.getMaxQueueSize())  // 这是运行中真正允许的最大queue长度，运行时可以修改。默认设为maxQueueSize
+                                .withMaxQueueSize(config.getMaxQueueSize())
+                                .withQueueSizeRejectionThreshold(config.getMaxQueueSize())
                 ));
         this.realSupplier = realSupplier;
         this.fallbackSupplier = fallbackSupplier;
